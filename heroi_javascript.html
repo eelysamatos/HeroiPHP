@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>exercicio js</title>
+    </head>
+    <body>
+        <script>
+            let universo = prompt("Marvel ou DC?");
+            universo = universo.toLowerCase();
+
+            /*
+            
+            forma de fazer a primeira letra em maiuscula
+
+            let nome = "sergio";
+            nome = nome[0].toUpperCase() + nome.substring(1)
+            document.write(nome);
+
+            */
+           if (universo == "marvel") {
+                
+                let listaHerois = 
+                [
+                    'homem de ferro',
+                    'thor',
+                    'vampira',
+                    'ciclope',
+                    'polaris'
+                ];
+                
+                let heroi = prompt("Digite o nome de um herói");
+                heroi = heroi.toLowerCase();
+                for(i = 0; i <= 4; i++){
+
+                    if(heroi == listaHerois[i]){
+                        document.write( "universo Marvel e super herói " + listaHerois[i] );
+                    }
+
+                }
+
+            }else if(universo == "dc"){
+
+                let listaHerois = 
+                [
+                    'flash',
+                    'batman',
+                    'aquaman',
+                    'mulher maravilha',
+                    'lanterna verde'
+                ];
+                
+                let heroi = prompt("Digite o nome de um herói");
+                heroi = heroi.toLowerCase();
+                for(i = 0; i <= 4; i++){
+
+                    if(heroi == listaHerois[i]){
+                        document.write( "universo DC e super herói " + listaHerois[i] );
+                    }
+
+                }
+
+            }else{
+
+            }
+        </script>
+    </body>
+</html>
